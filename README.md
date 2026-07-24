@@ -4,7 +4,7 @@ My personal portfolio website / virtual CV, built as part of the Profile
 Development deliverable for CMPG 323. It showcases my academic
 background, skills, projects, and contact information.
 
-**Live site:** _(add your GitHub Pages link here once it's live)_
+***Live site:** [civicdottir.github.io/karla-portfolio](https://civicdottir.github.io/karla-portfolio/)
 
 ## About
 

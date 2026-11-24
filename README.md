@@ -32,6 +32,7 @@ results from coursework and a live SQL demo.
 - Dedicated detail page for each project (PostGrade, ProFit Fitness, Network Design, Potch Holes)
 - "Try My Database": a live SQL playground on a simplified sample schema
 - Sections: About, Skills, Projects, SQL Demo, Education, Achievements, Volunteer, Contact
+- Downloadable PDF CV from the hero section
 
 ## Projects
 
@@ -62,7 +63,7 @@ karla-portfolio/
 ├── potchholes.html   (Potch Holes project details)
 ├── style.css         (all styling and theme variables)
 ├── script.js         (animations, theme, skill linking, SQL demo)
-└── assets/           (profile photo and project logos)
+└── assets/           (profile photo, project logos and CV PDF)
 ```
 
 ## Contact

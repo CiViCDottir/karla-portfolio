@@ -77,7 +77,7 @@ function highlightSkill(skill) {
     el.classList.toggle('match', !!ids && ids.includes(id));
     el.classList.toggle('dim', !!ids && !ids.includes(id));
   });
-    document.querySelectorAll('.project-chip').forEach((chip) => {
+  document.querySelectorAll('.project-chip').forEach((chip) => {
     chip.classList.toggle('active', !!ids && ids.includes(chip.dataset.project));
   });
 }
@@ -182,7 +182,7 @@ Object.entries(PRESETS).forEach(([label, sql]) => {
   button.textContent = label;
   button.addEventListener('click', () => {
     sqlInput.value = sql;
-    runQuery();
+    runQuery(); // runs the preset straight away
   });
   presetBox.appendChild(button);
 });
@@ -248,7 +248,7 @@ async function runQuery() {
   if (!sqlInput.value.trim()) {
     showMessage('pg-msg', 'Type a query first, or pick one of the examples above.');
     return;
-    }
+  }
   showMessage('pg-msg', 'Running...');
   try {
     const db = await loadDatabase();
@@ -268,4 +268,5 @@ document.getElementById('runSql').addEventListener('click', runQuery);
 sqlInput.addEventListener('keydown', (e) => {
   if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') runQuery();
 });
+
 }

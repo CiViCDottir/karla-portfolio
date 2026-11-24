@@ -182,6 +182,7 @@ Object.entries(PRESETS).forEach(([label, sql]) => {
   button.textContent = label;
   button.addEventListener('click', () => {
     sqlInput.value = sql;
+    runQuery();
   });
   presetBox.appendChild(button);
 });
@@ -267,10 +268,4 @@ document.getElementById('runSql').addEventListener('click', runQuery);
 sqlInput.addEventListener('keydown', (e) => {
   if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') runQuery();
 });
-
-  button.addEventListener('click', () => {
-    sqlInput.value = sql;
-    runQuery(); // <- add this line
-  });
-
 }

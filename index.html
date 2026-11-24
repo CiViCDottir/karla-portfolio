@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Karla Burger — Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -15,7 +16,12 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#playground">SQL Demo</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#volunteer">Volunteer</a></li>
       <li><a href="#contact">Contact</a></li>
+      
     </ul>
     <button id="themeToggle" aria-label="Toggle light/dark mode">🌙</button>
   </nav>
@@ -25,11 +31,12 @@
   <div class="hero-content">
     <p class="greeting">Hello, I'm</p>
     <h1>Karla Burger</h1>
-    <h2>BSc Information Technology Student</h2>
+    <h2>BSc Information Technology Graduate</h2>
     <p class="hero-bio">
-      Final-year IT student at North-West University with a foundation in
-      programming, information security, databases, and systems analysis.
-    </p>
+      Backend and database developer in the making: Django, PostgreSQL and
+      Oracle SQL. Looking for a junior IT, software, backend or data role
+      before starting my Data Science Honours in February 2027.
+</p>
     <div class="hero-buttons">
       <a href="#projects" class="btn btn-primary">View My Projects</a>
       <a href="#contact" class="btn btn-secondary">Get In Touch</a>
@@ -45,28 +52,28 @@
 
   <div class="about-content reveal">
     <p class="about-text">
-      I'm a final-year Bachelor of Information Technology student at
-      North-West University with a strong foundation in programming,
-      object-oriented software development, information security,
-      databases, and systems analysis. My academic strengths include
-      Object-Oriented Programming, Advanced User Interface Programming,
-      and Communication Skills. I'm passionate about technology,
-      problem solving, and continuous learning, with a growing interest
-      in software development and cybersecurity.
+      I'm a BSc Information Technology graduate from North-West University
+      (2024–2026), with hands-on experience across backend development,
+      relational database design, and networking — gained through
+      team-based university projects, including a Django + PostgreSQL
+      assessment system and a 19-table Oracle SQL database. I work well in
+      GitHub-based teams, and I'm currently looking for a junior IT,
+      software, backend or data role, with flexibility for the BSc Honours
+      in Data Science I'm starting at Eduvos in February 2027.
     </p>
 
     <div class="about-stats">
       <div class="stat-card">
-        <h3>2024</h3>
-        <p>Started BSc IT at NWU</p>
+        <h3>2024–26</h3>
+        <p>BSc IT, North-West University</p>
       </div>
       <div class="stat-card">
-        <h3>3</h3>
-        <p>Personal projects shipped</p>
+        <h3>4</h3>
+        <p>Technical projects completed</p>
       </div>
       <div class="stat-card">
-        <h3>18+</h3>
-        <p>Tools &amp; languages</p>
+        <h3>25+</h3>
+        <p>Tools &amp; skills tracked</p>
       </div>
     </div>
   </div>
@@ -74,43 +81,77 @@
 
 <section id="skills">
   <h2 class="section-title reveal">Skills</h2>
+  <p class="skills-hint reveal">Hover or tap a skill to see which projects used it.</p>
 
   <div class="skills-grid reveal">
     <div class="skill-category">
-      <h3>Languages &amp; Programming</h3>
+      <h3>Programming Languages</h3>
       <ul class="skill-list">
-        <li class="skill-item"><span class="skill-icon">🧩</span><span class="skill-name">OOP</span></li>
-        <li class="skill-item"><span class="skill-icon">🛠️</span><span class="skill-name">Delphi</span></li>
         <li class="skill-item"><span class="skill-icon">🐍</span><span class="skill-name">Python</span></li>
         <li class="skill-item"><span class="skill-icon">☕</span><span class="skill-name">Java</span></li>
         <li class="skill-item"><span class="skill-icon">#️⃣</span><span class="skill-name">C#</span></li>
         <li class="skill-item"><span class="skill-icon">➕</span><span class="skill-name">C++</span></li>
+        <li class="skill-item"><span class="skill-icon">🛠️</span><span class="skill-name">Delphi (school, 3yrs)</span></li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Backend (Academic Projects)</h3>
+      <ul class="skill-list">
+        <li class="skill-item"><span class="skill-icon">🎛️</span><span class="skill-name">Django</span></li>
+        <li class="skill-item"><span class="skill-icon">🔌</span><span class="skill-name">Django REST Framework</span></li>
+        <li class="skill-item"><span class="skill-icon">🌐</span><span class="skill-name">REST APIs</span></li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Databases</h3>
+      <ul class="skill-list">
         <li class="skill-item"><span class="skill-icon">🗄️</span><span class="skill-name">SQL</span></li>
+        <li class="skill-item"><span class="skill-icon">🐘</span><span class="skill-name">PostgreSQL</span></li>
+        <li class="skill-item"><span class="skill-icon">🛢️</span><span class="skill-name">Oracle SQL Developer</span></li>
+        <li class="skill-item"><span class="skill-icon">📐</span><span class="skill-name">DB Design &amp; Modelling</span></li>
       </ul>
     </div>
 
     <div class="skill-category">
-      <h3>Tools &amp; Platforms</h3>
+      <h3>Tools</h3>
       <ul class="skill-list">
-        <li class="skill-item"><span class="skill-icon">💻</span><span class="skill-name">VS Code</span></li>
-        <li class="skill-item"><span class="skill-icon">🖥️</span><span class="skill-name">Visual Studio</span></li>
         <li class="skill-item"><span class="skill-icon">🐙</span><span class="skill-name">GitHub</span></li>
-        <li class="skill-item"><span class="skill-icon">🛢️</span><span class="skill-name">Oracle SQL Dev</span></li>
-        <li class="skill-item"><span class="skill-icon">🌐</span><span class="skill-name">Packet Tracer</span></li>
-        <li class="skill-item"><span class="skill-icon">🐧</span><span class="skill-name">Linux</span></li>
-        <li class="skill-item"><span class="skill-icon">📊</span><span class="skill-name">MS Office</span></li>
+        <li class="skill-item"><span class="skill-icon">🖥️</span><span class="skill-name">Visual Studio</span></li>
+        <li class="skill-item"><span class="skill-icon">💻</span><span class="skill-name">VS Code</span></li>
+        <li class="skill-item"><span class="skill-icon">📊</span><span class="skill-name">Microsoft Excel</span></li>
       </ul>
     </div>
 
     <div class="skill-category">
-      <h3>Focus Areas</h3>
+      <h3>Networking &amp; Security</h3>
       <ul class="skill-list">
-        <li class="skill-item"><span class="skill-icon">🗃️</span><span class="skill-name">Database Design</span></li>
-        <li class="skill-item"><span class="skill-icon">🔒</span><span class="skill-name">Info Security</span></li>
-        <li class="skill-item"><span class="skill-icon">📈</span><span class="skill-name">Data Analytics</span></li>
-        <li class="skill-item"><span class="skill-icon">🧠</span><span class="skill-name">Problem Solving</span></li>
+        <li class="skill-item"><span class="skill-icon">🔧</span><span class="skill-name">Cisco Packet Tracer</span></li>
+        <li class="skill-item"><span class="skill-icon">🌐</span><span class="skill-name">Computer Networks</span></li>
+        <li class="skill-item"><span class="skill-icon">🔒</span><span class="skill-name">Information Security</span></li>
+        <li class="skill-item"><span class="skill-icon">🐧</span><span class="skill-name">Linux (Basic)</span></li>
       </ul>
     </div>
+
+    <div class="skill-category">
+      <h3>Analysis &amp; Practice</h3>
+      <ul class="skill-list">
+        <li class="skill-item"><span class="skill-icon">📈</span><span class="skill-name">Data Analytics</span></li>
+        <li class="skill-item"><span class="skill-icon">🧩</span><span class="skill-name">Systems Analysis &amp; Design</span></li>
+        <li class="skill-item"><span class="skill-icon">📄</span><span class="skill-name">Technical Documentation</span></li>
+        <li class="skill-item"><span class="skill-icon">🐞</span><span class="skill-name">Testing &amp; Debugging</span></li>
+        <li class="skill-item"><span class="skill-icon">🔍</span><span class="skill-name">Code Reviews</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="skill-projects">
+    <span class="skill-projects-label">Used in:</span>
+    <span class="project-chip" data-project="postgrade">PostGrade</span>
+    <span class="project-chip" data-project="profit">ProFit Fitness</span>
+    <span class="project-chip" data-project="network">Network Design</span>
+    <span class="project-chip" data-project="potchholes">Potch Holes</span>
   </div>
 </section>
 
@@ -121,56 +162,189 @@
 
     <div class="project-card reveal">
       <div class="project-header">
-        <h3>Potch Holes Information System</h3>
-        <span class="project-dates">03/2025 – 09/2025</span>
+        <div class="project-title-group">
+          <img src="assets/postgrade-icon.png" alt="PostGrade logo" class="project-icon">
+          <div>
+            <h3>PostGrade: Student Assessment Management System</h3>
+            <span class="project-dates">Aug – Oct 2026</span>
+          </div>
+        </div>
       </div>
       <p class="project-desc">
-        Collaborated in a team to analyse, design and develop an information
-        system for a non-profit organisation focused on pothole reporting
-        and repair management, including the relational database for
-        managing citizens, donors, repair partners, donations and reports.
+        Developed backend functionality for a student assessment system in
+        a university software development team, using Python, Django,
+        Django REST Framework and PostgreSQL. Built CSV import and
+        assessment management workflows, took part in testing, debugging
+        and code reviews, and wrote technical and project documentation.
       </p>
       <div class="project-badges">
-        <span class="badge">Phase 1: 84%</span>
-        <span class="badge">Phase 2: 94%</span>
-        <span class="badge badge-highlight">Final DB: 91%</span>
+        <a href="https://github.com/Devon-du-Toit/PostGradeDjango" target="_blank" rel="noopener" class="project-link">GitHub: Devon-du-Toit/PostGradeDjango ↗</a>
       </div>
+      <a href="postgrade.html" class="view-details-link">View Project Details →</a>
     </div>
 
     <div class="project-card reveal">
       <div class="project-header">
-        <h3>ProFit Fitness Database System</h3>
-        <span class="project-dates">02/2026 – 05/2026</span>
+        <div class="project-title-group">
+          <img src="assets/profit-icon.png" alt="ProFit Fitness logo" class="project-icon">
+          <div>
+            <h3>ProFit Fitness Database System</h3>
+            <span class="project-dates">Feb – May 2026</span>
+          </div>
+        </div>
       </div>
       <p class="project-desc">
-        Designed and implemented a complete relational database solution
-        for a fitness centre covering membership, bookings, inventory,
-        equipment maintenance and financial transactions. Built a 19-table
-        Oracle SQL database following the Database Life Cycle methodology.
-      </p>
-      <div class="project-badges">
-        <span class="badge">Phase 1: 84%</span>
-        <span class="badge">Phase 2: 94%</span>
-        <span class="badge badge-highlight">Final DB: 91%</span>
-      </div>
-    </div>
-
-    <div class="project-card reveal">
-      <div class="project-header">
-        <h3>Business Network Infrastructure Design</h3>
-        <span class="project-dates">04/2026 – 05/2026</span>
-      </div>
-      <p class="project-desc">
-        Led a team designing and implementing a business network solution
-        using Cisco Packet Tracer, based on real-world requirements —
-        network segmentation, wireless connectivity, scalability, and
-        full documentation with realistic hardware costs.
+        Collaborated in a team to design and implement a relational
+        database for a fitness centre covering memberships, bookings,
+        inventory, equipment maintenance and financial transactions.
+        Developed business rules, ER diagrams, dependency diagrams and
+        schemas following the Database Life Cycle (DBLC) methodology, and
+        implemented a 19-table Oracle SQL database with keys, constraints,
+        indexes, views and complex queries.
       </p>
       <div class="project-badges">
         <span class="badge badge-highlight">Final project: 84%</span>
       </div>
+      <a href="profit.html" class="view-details-link">View Project Details →</a>
     </div>
 
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-title-group">
+          <img src="assets/network-icon.png" alt="Network Design logo" class="project-icon">
+          <div>
+            <h3>Business Network Infrastructure Design</h3>
+            <span class="project-dates">Apr – May 2026</span>
+          </div>
+        </div>
+      </div>
+      <p class="project-desc">
+        Led a team in designing a business network in Cisco Packet Tracer
+        based on real-world requirements — network segmentation,
+        departmental isolation, wireless connectivity and internet access —
+        and prepared network documentation and budget considerations using
+        realistic hardware costs.
+      </p>
+      <div class="project-badges">
+        <a href="https://github.com/Devon-du-Toit/PostGradeDjango" target="_blank" rel="noopener" class="project-link">GitHub: Devon-du-Toit/PostGradeDjango ↗</a>
+        <span class="badge badge-highlight">Final project: 78%</span>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-header">
+        <div class="project-title-group">
+          <img src="assets/potchholes-icon.png" alt="Potch Holes logo" class="project-icon">
+          <div>
+            <h3>Potch Holes Information System</h3>
+            <span class="project-dates">Mar – Sep 2025</span>
+          </div>
+        </div>
+      </div>
+      <p class="project-desc">
+        Worked in a team to develop an information system for a non-profit
+        organisation focused on pothole reporting and repair management —
+        contributing to requirements documentation, use-case diagrams,
+        process models and feasibility analyses, and assisting with
+        relational database design.
+      </p>
+      <div class="project-badges">
+        <a href="https://github.com/PotchHoles/PotchHolesCMPG223" target="_blank" rel="noopener" class="project-link">GitHub: PotchHoles/PotchHolesCMPG223 ↗</a>
+        <span class="badge badge-highlight">Final DB: 91%</span>
+      </div>
+      <a href="potchholes.html" class="view-details-link">View Project Details →</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="playground">
+  <h2 class="section-title reveal">Try My Database</h2>
+
+  <div class="playground reveal">
+    <p class="pg-intro">
+      A simplified, made-up sample in the style of my ProFit Fitness project
+      (not the full 19-table schema), running live in your browser. Pick a
+      query or write your own.
+    </p>
+
+    <div class="pg-schema">
+      members(member_id, full_name, plan_id, join_date)<br>
+      plans(plan_id, plan_name, monthly_fee)<br>
+      classes(class_id, class_name, trainer, capacity)<br>
+      bookings(booking_id, member_id, class_id, booking_date)
+    </div>
+
+    <div class="pg-presets" id="sqlPresets"></div>
+
+    <textarea id="sqlInput" spellcheck="false" aria-label="SQL query" placeholder="Try: SELECT * FROM members;  (Ctrl+Enter to run)"></textarea>
+    <button id="runSql" type="button">Run query</button>
+
+    <div id="sqlOutput" aria-live="polite"></div>
+  </div>
+</section>
+
+<section id="education">
+  <h2 class="section-title reveal">Education</h2>
+
+  <div class="education-list reveal">
+    <div class="education-item">
+      <div class="edu-header">
+        <h3>Bachelor of Science in Information Technology</h3>
+        <span class="edu-dates">2024 – 2026</span>
+      </div>
+      <div class="edu-institution">North-West University (NWU), Potchefstroom</div>
+      <p class="edu-note">All modules completed; awaiting official confirmation of final results.</p>
+      <ul class="edu-details">
+        <li>Year averages: 58.87% (Year 1), 62.52% (Year 2), 62.59% (Year 3)</li>
+        <li>Relevant modules: Databases, Advanced Databases, Data Structures &amp; Algorithms, Object-Oriented Programming, Computer Networks, Information Security, Artificial Intelligence, Systems Analysis &amp; Design</li>
+      </ul>
+    </div>
+
+       <div class="education-item">
+      <div class="edu-header">
+        <h3>BSc Honours in Data Science</h3>
+        <span class="edu-dates">Starting Feb 2027</span>
+      </div>
+      <div class="edu-institution">Eduvos</div>
+      <p class="edu-note">Provisionally accepted, subject to final results.</p>
+    </div>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2 class="section-title reveal">Certificates &amp; Achievements</h2>
+
+  <ul class="achievements-list reveal">
+    <li><span class="ach-dot"></span>Introduction to Ethical Hacking — Great Learning Academy (May 2025)</li>
+    <li><span class="ach-dot"></span>Distinction in Communication Skills — 90%</li>
+    <li><span class="ach-dot"></span>Distinction in Object-Oriented Programming — 75%</li>
+    <li><span class="ach-dot"></span>Project Leader, Business Network Infrastructure Design — 84%</li>
+    <li><span class="ach-dot"></span>World Choir Games Gold Award — Jacaranda Children's Choir (2018)</li>
+  </ul>
+</section>
+
+<section id="volunteer">
+  <h2 class="section-title reveal">Leadership &amp; Volunteer Experience</h2>
+
+  <div class="volunteer-list reveal">
+    <div class="volunteer-item">
+      <div class="vol-header">
+        <h3>Community Outreach</h3>
+        <span class="vol-dates">April – October 2025</span>
+      </div>
+      <div class="vol-org">NWU Bellatrix Serenade</div>
+      <p>Took part in community engagement, performing for residents at an elderly care facility.</p>
+    </div>
+
+    <div class="volunteer-item">
+      <div class="vol-header">
+        <h3>CSV Leadership Team</h3>
+        <span class="vol-dates">June 2022 – November 2023</span>
+      </div>
+      <div class="vol-org">Afrikaanse Hoër Meisieskool Pretoria</div>
+      <p>Supported community outreach, charitable activities and mentorship programmes for younger learners.</p>
+    </div>
   </div>
 </section>
 
@@ -178,8 +352,10 @@
   <h2 class="section-title reveal">Get In Touch</h2>
 
   <p class="contact-intro">
-    I'm looking for opportunities to apply what I'm learning. Feel free to
-    reach out — I'd love to hear from you.
+    I'm looking for a junior IT, software, backend or data role — open to
+    remote or hybrid hours. I have a driver's licence, my own transport, a
+    reliable laptop and internet, and I'm fluent in English and Afrikaans
+    (native).
   </p>
 
 <div class="contact-links reveal">

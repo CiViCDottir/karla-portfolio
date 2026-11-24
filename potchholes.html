@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Potch Holes Information System — Karla Burger</title>
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a class="logo" href="index.html" style="text-decoration:none;">Karla Burger</a>
+      <ul class="nav-links">
+        <li><a href="index.html#projects">← Back to projects</a></li>
+      </ul>
+      <button id="themeToggle" aria-label="Toggle light/dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <section id="project-detail">
+    <h1 class="section-title">Potch Holes Information System</h1>
+
+    <div class="project-badges">
+      <span class="badge">Mar – Sep 2025</span>
+      <span class="badge">Team project</span>
+      <span class="badge badge-highlight">Final DB: 91%</span>
+      <a href="https://github.com/PotchHoles/PotchHolesCMPG223" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
+    </div>
+
+    <h3>The problem</h3>
+    <p class="project-desc">Reporting potholes in Potchefstroom was slow and inconvenient. Citizens had few ways to report, reports mostly went to the municipality, information wasn't structured enough to track, and there was little communication between citizens, repair organisations and other stakeholders. A non-profit organisation needed a single system to bring this together.</p>
+
+    <h3>My role</h3>
+    <p class="project-desc">I wrote our project document and delivered both of our presentations. On the system itself, I worked on the user account features: the edit-profile form, account deletion, input validation and adding sample data to the database.</p>
+    
+    <h3>Approach</h3>
+    <p class="project-desc">We worked through three phases of the Systems Development Life Cycle. In the project proposal we defined the problem, objectives, scope, stakeholders, constraints and risks, and prepared a schedule and a budget estimate of R246,160. In requirements analysis we documented functional and non-functional requirements (using the PIECES framework), user roles and input, processing and output specifications, gathered user needs through questionnaires, and compared three possible solutions in a feasibility analysis. In the modelling phase we refined the scope and produced use-case diagrams, data models and process models for citizen management, repair partner management, donations and reporting.</p>
+    <p class="project-desc">The proposed system covers citizen, repair partner and donor records, pothole reports with severity levels and optional photos, assigning cases to repair partners, tracking case status, recording donations, and reports on resolved potholes over a chosen period.</p>
+    <p class="project-desc">In the second half of the project (CMPG 223) the team built the system as an ASP.NET web application in Visual Studio 2019, written in C# and SQL, on a SQL Server database. It covers maintaining repair partners and donors, reporting a pothole case, assigning a case to a repair partner, closing it, receiving donations and requesting reports.</p>
+
+
+    <h3>Tools</h3>
+    <div class="project-badges">
+     <span class="badge">C#</span>
+     <span class="badge">ASP.NET</span>
+     <span class="badge">SQL Server</span>
+     <span class="badge">Visual Studio</span>
+     <span class="badge">GitHub</span>
+     <span class="badge">Systems Analysis &amp; Design</span>
+     <span class="badge">DB Design &amp; Modelling</span>
+    </div>
+
+    <h3>Decisions and challenges</h3>
+   <p class="project-desc">While building the user account features, we added input validation so that bad data never reached the database. Email addresses are checked to make sure they're in a valid format, and passwords have to meet strength requirements before an account can be created or updated.</p>
+
+    <h3>Result</h3>
+    <p class="project-desc">The team delivered a working ASP.NET web application backed by a SQL Server database, and the final database earned 91%.</p>
+
+    <a href="index.html#projects" class="view-details-link">← Back to projects</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Karla Burger. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

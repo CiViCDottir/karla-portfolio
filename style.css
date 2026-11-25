@@ -694,35 +694,6 @@ footer {
   box-shadow: 0 0 24px rgba(242, 184, 75, 0.3);
 }
 
-.skill-item[data-used]::after {
-  content: "Used in: " attr(data-used);
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-  width: max-content;
-  max-width: 200px;
-  padding: 8px 12px;
-  border-radius: 8px;
-  background: var(--bg);
-  border: 1px solid var(--border-strong);
-  color: var(--text);
-  font-family: var(--font-body);
-  font-size: 12px;
-  line-height: 1.4;
-  text-align: center;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.15s ease;
-  z-index: 10;
-}
-
-.skill-item[data-used]:hover::after,
-.skill-item[data-used]:focus-visible::after,
-.skill-item.pinned[data-used]::after {
-  opacity: 1;
-}
-
 .skill-item:hover,
 .skill-item:focus-visible {
   z-index: 5;
@@ -1097,4 +1068,98 @@ footer {
     opacity: 1;
     transform: none;
   }
+}
+
+/* ---- Project detail pages: hero banner ---- */
+.detail-hero {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.detail-logo {
+  width: 100%;
+  height: 100%;
+  min-height: 240px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  filter: brightness(1.04);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.detail-logo:hover {
+  border-color: var(--teal);
+  box-shadow: 0 14px 30px -14px var(--glow);
+  transform: translateY(-3px);
+}
+
+.detail-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.detail-stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 24px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.detail-stat:hover {
+  border-color: var(--teal);
+  box-shadow: 0 14px 30px -14px var(--glow);
+  transform: translateY(-2px);
+}
+
+.detail-stat-value {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--teal);
+  line-height: 1.2;
+}
+
+.detail-stat-value.highlight {
+  color: var(--amber);
+}
+
+.detail-stat-label {
+  font-size: 13px;
+  color: var(--text-dim);
+}
+
+@media (max-width: 768px) {
+  .detail-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-logo {
+    min-height: 200px;
+    height: 200px;
+  }
+
+  .detail-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---- Detail banner: amber grade block ---- */
+.detail-stat.grade {
+  border-color: rgba(242, 184, 75, 0.35);
+  background: rgba(242, 184, 75, 0.06);
+  box-shadow: 0 0 24px -10px rgba(242, 184, 75, 0.45);
+}
+
+.detail-stat.grade:hover {
+  border-color: var(--amber);
+  box-shadow: 0 14px 30px -12px rgba(242, 184, 75, 0.6);
 }

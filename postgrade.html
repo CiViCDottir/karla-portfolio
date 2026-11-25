@@ -22,20 +22,40 @@
   <section id="project-detail">
     <h1 class="section-title">PostGrade: Student Assessment Management System</h1>
 
-   <div class="project-badges">
-      <span class="badge">Aug – Oct 2026</span>
-      <span class="badge">Team project</span>
-      <span class="badge badge-highlight">Final project: 78%</span>
-    <a href="https://github.com/Devon-du-Toit/PostGradeDjango" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
-   </div>
+        <div class="detail-hero">
+      <img src="assets/postgrade-icon.png" alt="PostGrade logo" class="detail-logo">
+      <div class="detail-stats">
+        <div class="detail-stat grade">
+          <span class="detail-stat-value highlight">78%</span>
+          <span class="detail-stat-label">Final grade</span>
+        </div>
+        <div class="detail-stat">
+          <span class="detail-stat-value">Aug – Oct 2026</span>
+          <span class="detail-stat-label">Timeline</span>
+        </div>
+        <div class="detail-stat">
+          <span class="detail-stat-value">Backend + docs</span>
+          <span class="detail-stat-label">My role</span>
+        </div>
+        <div class="detail-stat">
+          <span class="detail-stat-value">Django + PostgreSQL</span>
+          <span class="detail-stat-label">Core stack</span>
+        </div>
+      </div>
+    </div>
 
+    <div class="project-badges">
+      <span class="badge">Team project</span>
+      <a href="https://github.com/Devon-du-Toit/PostGradeDjango" target="_blank" rel="noopener" class="project-link">GitHub ↗</a>
+    </div>
+    
     <h3>The problem</h3>
     <p class="project-desc">Sorting, identifying and returning marked assessment scripts by hand takes lecturers a lot of time and invites mistakes. PostGrade helps lecturers handle this: it identifies student numbers in uploaded scripts, lets the lecturer verify each match, and returns the verified file to the student by tracked email. It does not enter or calculate marks.</p>
 
     <h3>My role</h3>
     <p class="project-desc">On the analysis and documentation side, I wrote the macro-forces (PESTEL) analysis, the requirements statement, the product perspective, features and user overview, the external interface requirements, and the integration and scope management sections, including scope control and Phase 1 versus a possible Phase 2.</p>
     <p class="project-desc">On the development side, I built the website preview and worked on the Django backend: validating and authorising access to submission files, managing the file lifecycle, hardening the class-list CSV import, and documenting the API.</p>
-    
+
     <h3>Approach</h3>
     <p class="project-desc">Our team of students built PostGrade as a Django REST API backend with a separate Vue.js frontend. The backend covers courses, student class lists, validated CSV imports and assessments, with search, filtering and a dashboard of counts. Lecturers upload PDF or image scripts, which are queued for student-number recognition with OCR and image processing. The lecturer then verifies the match and requests email delivery, and a background mail worker sends the stored copy with delivery history and retries.</p>
 
@@ -54,7 +74,7 @@
     <p class="project-desc">Two design decisions stand out. For script files, we agreed that a file could be replaced unless its submission had already been marked, and that the old file is only deleted after the replacement has been safely saved, so that a failed upload never loses data. For the CSV import, we made it all-or-nothing: every row is validated first, all the errors are reported together, and nothing is imported if any row fails. An existing student is never overwritten unless the lecturer explicitly asks for it.</p>
 
     <h3>Result</h3>
-    <p class="project-desc">A working backend covering courses, students, validated CSV imports, assessments, script upload with recognition, lecturer verification and tracked email delivery, supported by automated tests and project documentation. Achieving a final grade of 78%</p>
+    <p class="project-desc">A working backend covering courses, students, validated CSV imports, assessments, script upload with recognition, lecturer verification and tracked email delivery, supported by automated tests and project documentation. The project earned a final grade of 78%.</p>
 
     <p><a href="index.html#projects" class="view-details-link">← Back to projects</a></p>
   </section>
